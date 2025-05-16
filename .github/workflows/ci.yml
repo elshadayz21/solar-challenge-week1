@@ -1,0 +1,50 @@
+# name: CI
+
+# on:
+  # push:
+  #   branches: [ main ]
+  # pull_request:
+  #   branches: [ main ]
+
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v4
+
+#       - name: Set up Python
+#         uses: actions/setup-python@v5
+#         with:
+#           python-version: '3.x'
+
+#       - name: Show Python version
+#         run: python --version
+
+#       - name: Install dependencies
+#         run: |
+#           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+
+
+name: CI
+on:   
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4   
+# @v4 is the version of github checkout action used for stability purposes
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - name: Install deps
+        run: pip install -r requirements.txt
+      - name: Show Python version
+        run: python --version
