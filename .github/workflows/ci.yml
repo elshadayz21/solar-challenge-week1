@@ -1,33 +1,4 @@
-# name: CI
-
-# on:
-  # push:
-  #   branches: [ main ]
-  # pull_request:
-  #   branches: [ main ]
-
-# jobs:
-#   build:
-#     runs-on: ubuntu-latest
-
-#     steps:
-#       - name: Checkout code
-#         uses: actions/checkout@v4
-
-#       - name: Set up Python
-#         uses: actions/setup-python@v5
-#         with:
-#           python-version: '3.x'
-
-#       - name: Show Python version
-#         run: python --version
-
-#       - name: Install dependencies
-#         run: |
-#           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-
-
-
+# This is a GitHub Actions workflow file that defines a CI pipeline.
 name: CI
 on:   
   push:
