@@ -16,7 +16,8 @@ To set up and reproduce the environment for this project, follow these steps:
 3. **Activate the virtual environment:**
    - On Windows:
      ```sh
-     venv\Scripts\activate
+     .venv\Scripts\activate                                                                            
+(.venv) PS C:\Users
      ```
    - On macOS/Linux:
      ```sh
@@ -25,6 +26,8 @@ To set up and reproduce the environment for this project, follow these steps:
 
 4. **Install dependencies:**
    ```sh
+   Generate: pip freeze > requirements.txt
+
    pip install -r requirements.txt
    ```
 
