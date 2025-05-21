@@ -37,3 +37,18 @@ To set up and reproduce the environment for this project, follow these steps:
    ```
 
 Now your environment should be ready to use!
+
+
+
+ **Streamlint dashboard link**
+   ```sh
+  https://solar-challenge-week1-elshadayz21.streamlit.app/
+   ```
+
+![alt text](image.png)
+
+![alt text](image-1.png)
+
+![alt text](image-2.png)
+
+![alt text](image-3.png)
